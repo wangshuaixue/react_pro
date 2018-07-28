@@ -1,0 +1,76 @@
+@import "../../common/less/mixins";
+.footer_bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 5;
+  left:0;
+  bottom: 0;
+  height:98/@rem;
+  width:750/@rem;
+  background-color: #fafafa;
+  border-top:1px solid #d9d9d9;
+  .guide_item{
+    position: relative;
+    text-align: center;
+    display: block;
+    width: 48/@rem;
+    &.on{
+      .text{
+        color: #DA989B
+      }
+    }
+    &.shop{
+      width:72/@rem;
+    }
+    .item_icon{
+      display: inline-block;
+      background-image: url('./img/footer.png');
+      background-repeat: no-repeat;
+      background-size: 40/@rem 490/@rem;
+      width:40/@rem;
+      height:40/@rem;
+      vertical-align: middle;
+      &.home{
+        background-position: 0 -250/@rem;
+        &.on{
+          background-position :0 -200/@rem;
+        }
+      }
+      &.goods{
+        background-position :0 -350/@rem;
+        &.on{
+          background-position :0 -300/@rem;
+        }
+      }
+      &.classify{
+        background-position :0 -150/@rem;
+        &.on{
+          background-position :0 -100/@rem;
+        }
+      }
+      &.cart{
+        background-position :0 -50/@rem;
+        &.on{
+          background-position :0 0;
+        }
+      }
+      &.personal{
+        background-position :0 -450/@rem;
+        &.on{
+          background-position :0 -400/@rem;
+        }
+      }
+
+    }
+    .text{
+      font-size: 24/@rem;
+      text-align: center;
+      display: block;
+      color: #666;
+      margin-top: 7/@rem;
+      line-height: 1;
+    }
+  }
+}

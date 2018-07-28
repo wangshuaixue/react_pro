@@ -1,0 +1,69 @@
+@import '../../../common/less/mixins';
+.wrap-items{
+  height:88/@rem;
+  left:0;
+  top:0;
+  width:100%;
+  position: fixed;
+  z-index: 5;
+  .nav-bar{
+    height:88/@rem;
+    background-color: #fafafa;
+    padding:0 16/@rem 0 24/@rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    .center{
+      display: block;
+      .logo{
+        display: inline-block;
+        position: absolute;
+        vertical-align: middle;
+        left:0;
+        top:0;
+        right:0;
+        bottom:0;
+        margin:auto;
+        background-image: url('./img/xb.png');
+        background-position: 0 -128/@rem;
+        background-size:172/@rem 398/@rem;
+        background-repeat:no-repeat;
+        width:172/@rem;
+        height:54/@rem;
+      }
+    }
+    .left-home{
+      width:48/@rem;
+      height:44/@rem;
+      background-position: 0 -74/@rem;
+      background-image: url('./img/xb.png');
+      background-repeat:no-repeat;
+      background-size:172/@rem 398/@rem;
+      vertical-align: middle;
+      display: inline-block;
+    }
+    .right{
+      display: flex;
+      width:128/@rem;
+      height:64/@rem;
+      margin-right: 5/@rem;
+      .search{
+        display: inline-block;
+        background-image: url('./img/xb.png');
+        background-position: 0 -334/@rem;
+        background-size: 172/@rem 398/@rem;
+        width:64/@rem;
+        height:64/@rem;
+      }
+      .cart{
+        display: inline-block;
+        background-image: url('./img/xb.png');
+        background-position: 0 0;
+        background-size: 172/@rem 398/@rem;
+        width:64/@rem;
+        height:64/@rem;
+      }
+    }
+  }
+}

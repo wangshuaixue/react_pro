@@ -1,0 +1,45 @@
+@rem:750/16rem;
+
+.bottom-border-1px{
+  position: relative;
+  &:before{
+    content:'';
+    position:absolute;
+    z-index: 200;
+    left:0;
+    bottom:0;
+    width: 100%;
+    height:1px;
+    background-color: #eeeeee;
+    transform: scaleY(0.5);
+  }
+}
+
+.top-border-1px{
+  position: relative;
+  &:before{
+    content:'';
+    position:absolute;
+    z-index: 200;
+    left:0;
+    bottom:0;
+    width: 100%;
+    height:1px;
+    background-color: #eeeeee;
+  }
+}
+
+.right-border-1px{
+  position: relative;
+  &:before{
+    content:'';
+    position:absolute;
+    z-index: 200;
+    left:0;
+    bottom:0;
+    width: 100%;
+    height:1px;
+    background-color: #eeeeee;
+    transform: scaleX(0.5);
+  }
+}

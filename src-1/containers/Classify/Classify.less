@@ -1,0 +1,37 @@
+@import '../../common/less/mixins';
+.slideW{
+  margin-top: 90/@rem;
+  border-right:1/@rem solid #bbb;
+  position: fixed;
+  top:0;
+  left:0;
+  bottom: 0;
+  overflow: hidden;
+  height:100%;
+  background-color: #fff;
+  .sidebar-wrap{
+    height:100%;
+    .sidebar{
+      width:162/@rem;
+      padding:0 0 300/@rem 0;
+      font-size: 28/@rem;
+      margin-bottom: 50/@rem;
+      .item{
+        margin-top: 40/@rem;
+        width:162/@rem;
+        height:50/@rem;
+        line-height: 50/@rem;
+        text-align: center;
+        &.active{
+          width:158/@rem;
+          border-left:4/@rem solid #ab2b2b;
+          .text{
+            color: #ab2b2b;
+            font-size: 32/@rem;
+          }
+        }
+      }
+
+    }
+  }
+}
